@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h1>Pagina Inicial</h1>
+  return <h1 className="text-blue">Pagina Inicial</h1>
 }
