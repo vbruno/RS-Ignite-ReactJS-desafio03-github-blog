@@ -1,7 +1,9 @@
+import { Profile } from '@/components/Profile'
+
 export default function page() {
   return (
-    <div>
-      <h1 className="text-blue">Pagina Blog</h1>
+    <div className="-mt-20">
+      <Profile />
     </div>
   )
 }

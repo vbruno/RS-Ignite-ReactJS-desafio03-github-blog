@@ -23,6 +23,9 @@ const config: Config = {
         },
         blue: '#3294F8',
       },
+      textTitle: {
+        L: 'fontFamily: Nunito fontSize: 2.25rem lineHeight: 2.5rem',
+      },
     },
   },
   plugins: [],
