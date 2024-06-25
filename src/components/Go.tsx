@@ -4,6 +4,7 @@ import Link from 'next/link'
 type LinkProps = {
   children: React.ReactNode
   href: string
+  newTab?: boolean
 }
 
 export function Go(props: LinkProps) {
@@ -11,6 +12,7 @@ export function Go(props: LinkProps) {
     <Link
       className="flex space-x-2 items-center textComponentLink"
       href={props.href ?? '#'}
+      target={props.newTab ? '_blank' : '_self'}
     >
       <h1 className="uppercase">{props.children}</h1>
       <Image
