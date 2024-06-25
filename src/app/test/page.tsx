@@ -1,9 +1,7 @@
-import { GitHubUsersApi } from '@/services/githubService'
+import { GitHubSearchApi } from '@/services/githubSearchAPIService'
 
 export default async function Page() {
-  const apiGithub = new GitHubUsersApi('vbruno')
+  new GitHubSearchApi().GetSearchIssues()
 
-  const user = await apiGithub.getUser()
-
-  return <div className="text-zinc-100">{user.name}</div>
+  return <div className="text-zinc-100">Pagina de Teste</div>
 }

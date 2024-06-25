@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Go } from './Go'
-import { GitHubUsersApi } from '@/services/githubService'
+import { GitHubUsersApi } from '@/services/githubUserAPIService'
 
 export async function Profile() {
   const user = await new GitHubUsersApi('vbruno').getUser()
