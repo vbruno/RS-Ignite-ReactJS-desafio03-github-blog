@@ -1,7 +1,9 @@
+import { PostInfo } from '@/components/PostInfo'
+
 export default function page() {
   return (
-    <div>
-      <h1 className="text-blue">Pagina Post</h1>
+    <div className="w-[864px] -mt-20">
+      <PostInfo />
     </div>
   )
 }

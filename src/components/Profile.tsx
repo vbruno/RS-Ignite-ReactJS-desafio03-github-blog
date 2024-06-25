@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { Go } from './Link'
+import { Go } from './Go'
 
 export function Profile() {
   return (
