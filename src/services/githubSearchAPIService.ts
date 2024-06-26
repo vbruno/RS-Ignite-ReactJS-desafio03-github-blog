@@ -108,7 +108,7 @@ interface GetSearchIssuesProps {
   items: Item[]
 }
 
-export class GitHubSearchApi {
+export class GitHubSearchAPI {
   private urlBase = 'https://api.github.com/'
   private username = 'vbruno'
   private repository = 'RS-Ignite-ReactJS-desafio03-github-blog'
