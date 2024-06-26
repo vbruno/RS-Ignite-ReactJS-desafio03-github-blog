@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { Go } from './Go'
-import { GitHubUsersApi } from '@/services/githubUserAPIService'
+import { GitHubUserAPI } from '@/services/githubUserAPIService'
 
 export async function Profile() {
-  const user = await new GitHubUsersApi().getUser()
+  const user = await new GitHubUserAPI().getUser()
 
   // console.log(user)
 

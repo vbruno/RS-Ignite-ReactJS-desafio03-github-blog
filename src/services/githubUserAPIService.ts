@@ -33,7 +33,7 @@ export type GetUserProps = {
   updated_at: string
 }
 
-export class GitHubUsersApi {
+export class GitHubUserAPI {
   private username = 'vbruno'
 
   async getUser() {
