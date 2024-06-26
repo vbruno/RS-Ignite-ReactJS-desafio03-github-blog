@@ -3,7 +3,7 @@ import { Go } from './Go'
 import { GitHubUsersApi } from '@/services/githubUserAPIService'
 
 export async function Profile() {
-  const user = await new GitHubUsersApi('vbruno').getUser()
+  const user = await new GitHubUsersApi().getUser()
 
   // console.log(user)
 

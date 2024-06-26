@@ -34,11 +34,7 @@ export type GetUserProps = {
 }
 
 export class GitHubUsersApi {
-  private username: string = ''
-
-  constructor(username: string) {
-    this.username = username
-  }
+  private username = 'vbruno'
 
   async getUser() {
     const response = await fetch(
@@ -46,12 +42,16 @@ export class GitHubUsersApi {
       {
         method: 'GET',
         headers: {
+          Accept: 'application/vnd.github+json',
           'Content-Type': 'application/json',
+          'X-GitHub-Api-Version': '2022-11-28',
         },
       },
     )
 
     const data: GetUserProps = await response.json()
+
+    // console.log(data)
 
     return data
   }
