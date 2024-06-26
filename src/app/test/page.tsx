@@ -1,7 +1,7 @@
-import { GitHubSearchApi } from '@/services/githubSearchAPIService'
+import { GitHubIssuesAPI } from '@/services/githubIssuesAPIService'
 
 export default async function Page() {
-  new GitHubSearchApi().GetSearchIssues()
+  new GitHubIssuesAPI().GetIssues(1)
 
   return <div className="text-zinc-100">Pagina de Teste</div>
 }
