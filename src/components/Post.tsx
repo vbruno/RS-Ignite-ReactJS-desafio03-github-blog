@@ -14,7 +14,7 @@ type PostProps = {
 
 export function Post({ title, content, date }: PostProps) {
   return (
-    <div className="w-[416px] h-[260px] p-8 bg-base-post rounded-xl">
+    <div className="w-[416px] h-[260px] p-8 bg-base-post rounded-xl hover:scale-105 transition duration-300 ease-in-out">
       <div className="flex justify-between mb-5 gap-5">
         <h1 className="textTitleM max-w-72">{title}</h1>
         <h2 className="textTextS w-24 text-end">{dayjs(date).fromNow()}</h2>

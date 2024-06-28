@@ -6,7 +6,10 @@ export function PostInfo() {
   return (
     <div className="bg-base-profile rounded-xl p-8">
       <div className="flex justify-between">
-        <Link href={'/'} className="flex textComponentLink gap-2 items-center">
+        <Link
+          href={'/'}
+          className="flex textComponentLink gap-2 items-center hover:underline"
+        >
           <Image
             src={'static/image/icons/chevron-left-solid.svg'}
             width={12}

@@ -10,7 +10,7 @@ type LinkProps = {
 export function Go(props: LinkProps) {
   return (
     <Link
-      className="flex space-x-2 items-center textComponentLink"
+      className="flex space-x-2 items-center textComponentLink hover:underline"
       href={props.href ?? '#'}
       target={props.newTab ? '_blank' : '_self'}
     >
