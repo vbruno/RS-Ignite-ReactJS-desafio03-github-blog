@@ -5,7 +5,8 @@ import { GitHubSearchAPI } from '@/services/githubSearchAPIService'
 import Link from 'next/link'
 
 export default async function page() {
-  const { items: posts } = await new GitHubSearchAPI().GetSearchIssues()
+  const { items: posts, total_count } =
+    await new GitHubSearchAPI().GetSearchIssues()
 
   return (
     <div className="-mt-20 max-w-[864px] flex flex-col justify-center items-center">
@@ -13,7 +14,7 @@ export default async function page() {
       <div className="mt-16">
         <div className="flex items-center justify-between">
           <span className="textTitleS">Publicações</span>
-          <span className="textTextS">6 publicações</span>
+          <span className="textTextS">{total_count} publicações</span>
         </div>
         <TextInput placeholder="Buscar conteúdo..." />
         <div className="mt-12 flex flex-wrap gap-8">

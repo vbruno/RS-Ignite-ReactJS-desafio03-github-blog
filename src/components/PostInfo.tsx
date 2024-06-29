@@ -1,8 +1,17 @@
 import Image from 'next/image'
 import { Go } from './Go'
 import Link from 'next/link'
+import { GitHubIssuesAPI } from '@/services/githubIssuesAPIService'
 
-export function PostInfo() {
+type PostInfoProps = {
+  numberPost: number
+}
+
+export async function PostInfo({ numberPost }: PostInfoProps) {
+  const post = await new GitHubIssuesAPI().GetIssues(numberPost)
+
+  console.log(post)
+
   return (
     <div className="bg-base-profile rounded-xl p-8">
       <div className="flex justify-between">
