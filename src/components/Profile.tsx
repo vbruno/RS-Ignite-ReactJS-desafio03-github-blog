@@ -28,6 +28,7 @@ export async function Profile() {
           <div className="flex gap-6 mt-6">
             <div className="flex gap-2">
               <Image
+                className="w-auto h-auto"
                 src={'/static/image/icons/github-brands.svg'}
                 width={18}
                 height={18}
@@ -37,6 +38,7 @@ export async function Profile() {
             </div>
             <div className="flex gap-2">
               <Image
+                className="w-auto h-auto"
                 src={'/static/image/icons/building-solid.svg'}
                 width={18}
                 height={18}
@@ -46,6 +48,7 @@ export async function Profile() {
             </div>
             <div className="flex gap-2">
               <Image
+                className="w-auto h-auto"
                 src={'/static/image/icons/user-group-solid.svg'}
                 width={18}
                 height={18}

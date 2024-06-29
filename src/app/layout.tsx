@@ -25,6 +25,7 @@ export default function RootLayout({
           width={1440}
           height={296}
           alt="img cover page"
+          priority
         />
         {children}
       </body>
