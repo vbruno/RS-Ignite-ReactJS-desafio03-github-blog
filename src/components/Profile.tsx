@@ -11,7 +11,7 @@ export async function Profile() {
     <div className="w-[864px] h-52 bg-base-profile rounded-xl">
       <div className="flex justify-center px-9 py-8 space-x-8 ">
         <Image
-          className="rounded-lg"
+          className="rounded-lg size-36"
           src={user.avatar_url}
           width={148}
           height={148}
@@ -28,7 +28,7 @@ export async function Profile() {
           <div className="flex gap-6 mt-6">
             <div className="flex gap-2">
               <Image
-                className="w-auto h-auto"
+                className="size-5"
                 src={'/static/image/icons/github-brands.svg'}
                 width={18}
                 height={18}
@@ -38,7 +38,7 @@ export async function Profile() {
             </div>
             <div className="flex gap-2">
               <Image
-                className="w-auto h-auto"
+                className="size-5"
                 src={'/static/image/icons/building-solid.svg'}
                 width={18}
                 height={18}
@@ -48,7 +48,7 @@ export async function Profile() {
             </div>
             <div className="flex gap-2">
               <Image
-                className="w-auto h-auto"
+                className="size-5"
                 src={'/static/image/icons/user-group-solid.svg'}
                 width={18}
                 height={18}
