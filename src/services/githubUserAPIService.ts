@@ -1,3 +1,5 @@
+import { env } from '@/env'
+
 export type GetUserProps = {
   login: string
   id: number
@@ -34,7 +36,11 @@ export type GetUserProps = {
 }
 
 export class GitHubUserAPI {
-  private username = 'vbruno'
+  private username = ''
+
+  constructor() {
+    this.username = env.github_user
+  }
 
   async getUser() {
     const response = await fetch(

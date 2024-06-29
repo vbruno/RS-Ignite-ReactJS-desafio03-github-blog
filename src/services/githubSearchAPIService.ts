@@ -1,3 +1,5 @@
+import { env } from '@/env'
+
 interface User {
   login: string
   id: number
@@ -110,8 +112,13 @@ interface GetSearchIssuesProps {
 
 export class GitHubSearchAPI {
   private urlBase = 'https://api.github.com/'
-  private username = 'vbruno'
-  private repository = 'RS-Ignite-ReactJS-desafio03-github-blog'
+  private username = ''
+  private repository = ''
+
+  constructor() {
+    this.username = env.github_user
+    this.repository = env.github_repository
+  }
 
   async GetSearchIssues(search: string = '') {
     const url = new URL('/search/issues', this.urlBase)

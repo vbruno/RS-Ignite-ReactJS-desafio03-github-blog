@@ -1,3 +1,5 @@
+import { env } from '@/env'
+
 export interface User {
   login: string
   id: number
@@ -171,8 +173,13 @@ export interface GetIssuesProps {
 
 export class GitHubIssuesAPI {
   private urlBase = 'https://api.github.com/'
-  private username = 'vbruno'
-  private repository = 'RS-Ignite-ReactJS-desafio03-github-blog'
+  private username = ''
+  private repository = ''
+
+  constructor() {
+    this.username = env.github_user
+    this.repository = env.github_repository
+  }
 
   async GetIssues(number: number) {
     const url = new URL(
