@@ -127,8 +127,6 @@ export class GitHubSearchAPI {
       `${search} repo:${this.username}/${this.repository}`,
     )
 
-    // console.log(url.href)
-
     const response = await fetch(url, {
       method: 'GET',
       headers: {
