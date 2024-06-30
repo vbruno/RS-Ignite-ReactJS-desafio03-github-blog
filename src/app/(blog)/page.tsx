@@ -13,8 +13,6 @@ export default async function page({ searchParams }: PostProps) {
   const { items: posts, total_count } =
     await new GitHubSearchAPI().GetSearchIssues(searchParams.q as string)
 
-  console.log(searchParams.q)
-
   return (
     <div className="-mt-20 max-w-[864px] flex flex-col justify-center items-center">
       <Profile />
